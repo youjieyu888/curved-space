@@ -71,7 +71,7 @@
 \begin_body
 
 \begin_layout Standard
-\begin_inset Formula $E(\rho,z)=e^{ikz-i\omega t}e^{-\rho^{2}/(2\sigma_{I}^{2})}e^{i\phi(\rho)}$
+\begin_inset Formula $E(\rho,z)=e^{ikz-i\omega t}e^{-\rho^{2}/(2\sigma^{2})}e^{i\phi(\rho)}$
 \end_inset
 
 (intensity: Gaussian model.
@@ -128,7 +128,241 @@ keep the fist order of
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $<E^{*}(\rho_{1},z)E(\rho_{2},z)>=e^{-(\rho_{1}^{2}+\rho_{2}^{2})/\sigma_{I}^{2}}e^{-\frac{(\rho_{1}-\rho_{2})^{2}}{\sigma_{I}^{2}}}\times const$
+\begin_inset Formula $<E^{*}(\rho_{1},z)E(\rho_{2},z)>=e^{-(\rho_{1}^{2}+\rho_{2}^{2})/\sigma^{2}}e^{-\frac{(\rho_{1}-\rho_{2})^{2}}{\sigma_{I}^{2}}}\times const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+l
+\end_layout
+
+\begin_layout Standard
+cylinder: flat in z
+\end_layout
+
+\begin_layout Standard
+coor transf:(
+\begin_inset Formula $R_{2}>R_{1}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{c}
+\rho'=\frac{R_{2}-R_{1}}{R_{2}}\rho+R_{1}\\
+\phi'=\phi
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+change z in radial direction:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho\shortrightarrow\sqrt{(\rho cos\phi)^{2}+z^{2}}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+so transf is: 
+\end_layout
+
+\begin_layout Standard
+2,
+\end_layout
+
+\begin_layout Standard
+spherical:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\rho'=\frac{R_{2}-R_{1}}{R_{2}}\rho+R_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\theta'=\theta,\phi'=\phi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in cylindral coor:
+\begin_inset Formula $\rho\shortrightarrow\sqrt{\rho^{2}+z^{2}},\,\theta\shortrightarrow arccos(z/\rho)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sqrt{\rho'^{2}+z'^{2}}=\frac{R_{2}-R_{1}}{R_{2}}\sqrt{\rho^{2}+z^{2}}+R_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\rho}{z}=\frac{\rho'}{z'}$
+\end_inset
+
+ & maintain 
+\begin_inset Formula $z,\rho$
+\end_inset
+
+'s signs
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sqrt{(\frac{\rho}{z}z')^{2}+z'^{2}}=\frac{R_{2}-R_{1}}{R_{2}}\sqrt{\rho^{2}+z^{2}}+R_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho'=\frac{\rho}{z}z'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phi'=\phi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z'=z\frac{(\frac{R_{2}-R_{1}}{R_{2}}\sqrt{\rho^{2}+z^{2}}+R_{1})}{\sqrt{\rho{}^{2}+z^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho'=\rho\frac{(\frac{R_{2}-R_{1}}{R_{2}}\sqrt{\rho^{2}+z^{2}}+R_{1})}{\sqrt{\rho^{2}+z^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+since 
+\begin_inset Formula $\rho=\sqrt{x^{2}+y^{2}}$
+\end_inset
+
+, we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z'=z\frac{(\frac{R_{2}-R_{1}}{R_{2}}\sqrt{x^{2}+y^{2}+z^{2}}+R_{1})}{\sqrt{x^{2}+y^{2}+z^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x'=x\frac{(\frac{R_{2}-R_{1}}{R_{2}}\sqrt{x^{2}+y^{2}+z^{2}}+R_{1})}{\sqrt{x^{2}+y^{2}+z^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y'=y\frac{(\frac{R_{2}-R_{1}}{R_{2}}\sqrt{x^{2}+y^{2}+z^{2}}+R_{1})}{\sqrt{x^{2}+y^{2}+z^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+or 
+\begin_inset Formula $x^{i'}=x^{i}\frac{R_{2}-R_{1}}{R_{2}}+R_{1}\frac{x^{i}}{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{dx^{i}'}{dx^{k}}=\delta_{ik}\frac{R_{2}-R_{1}}{R_{2}}+R_{1}\frac{\delta_{ik}}{r}-R_{1}\frac{x^{i}x^{k}}{r^{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $J=\frac{R_{2}-R_{1}}{R_{2}}[1-2\frac{R_{1}}{R_{2}}(1-\frac{1}{r}R_{2})+\frac{R_{1}^{2}}{R_{2}^{2}}(1-\frac{2}{r}R_{2}+\frac{R_{2}^{2}}{r^{2}})]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g_{ij}=\frac{dx^{k}}{dx^{i}'}\frac{dx^{k}}{dx^{j}'}=\begin{array}{ccc}
+\\
+\\
+\\
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\epsilon_{0}=1,$
+\end_inset
+
+linear material:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $-\frac{1}{\sqrt{g}}\partial_{j}\sqrt{g}g^{jk}\partial_{k}E^{i}+\frac{1}{\sqrt{g}}\partial_{j}\sqrt{g}g^{ik}\partial_{k}E^{j}+\frac{1}{c^{2}}\frac{\partial^{2}E^{i}}{\partial t^{2}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+initial: 
+\begin_inset Formula $E_{x}\ne0$
 \end_inset
 
 

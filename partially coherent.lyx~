@@ -75,7 +75,7 @@
 \end_inset
 
 (intensity: Gaussian model.
- Random phase: first order uniform, second correlation is Gaussian)
+ Random phase: first order Gaussian, second correlation is Gaussian)
 \end_layout
 
 \begin_layout Standard
@@ -128,7 +128,31 @@ keep the fist order of
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $<E^{*}(\rho_{1},z)E(\rho_{2},z)>=e^{-(\rho_{1}^{2}+\rho_{2}^{2})/\sigma^{2}}e^{-\frac{(\rho_{1}-\rho_{2})^{2}}{\sigma_{I}^{2}}}\times const$
+\begin_inset Formula $<E^{*}(\rho_{1},z_{1})E(\rho_{2},z_{2})>=e^{ik(z_{2}-z_{1})}e^{-(\rho_{1}^{2}+\rho_{2}^{2})/\sigma^{2}}e^{-\frac{(\rho_{1}-\rho_{2})^{2}}{\sigma_{I}^{2}}}\times const$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1, if we measure many times, we can get rid of 
+\begin_inset Formula $\phi(\rho)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2, Assuming we only measure one time (snapshot at (two) different z at the
+ same time): first order -> phase info is destroyed by 
+\begin_inset Formula $\phi(\rho)$
+\end_inset
+
+; second order: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
 \end_inset
 
 
@@ -355,6 +379,14 @@ linear material:
 
 \begin_layout Standard
 \begin_inset Formula $-\frac{1}{\sqrt{g}}\partial_{j}\sqrt{g}g^{jk}\partial_{k}E^{i}+\frac{1}{\sqrt{g}}\partial_{j}\sqrt{g}g^{ik}\partial_{k}E^{j}+\frac{1}{c^{2}}\frac{\partial^{2}E^{i}}{\partial t^{2}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+initial: 
+\begin_inset Formula $E_{x}\ne0$
 \end_inset
 
 
